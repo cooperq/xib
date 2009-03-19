@@ -1,0 +1,20 @@
+<h1>
+  <%=h @session.project.name %> Session
+</h1>
+
+<p>
+  <%=h @session.created_at %>
+</p>
+<h2>Hours:</h2>
+<div class='box' id='hours'>
+
+  <%=h @session.hours %>
+</div>
+<h2>Notes:</h2>
+<div class='box'>
+  <%=h @session.notes %>
+</div>
+
+
+<%= link_to 'Edit', edit_session_path(@session) %> |
+<%= link_to 'Back', @session.project %>

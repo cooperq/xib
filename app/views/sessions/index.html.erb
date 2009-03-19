@@ -1,0 +1,30 @@
+<h1>Listing sessions</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Project</th>
+    <th>Date</th>
+    <th>Rate</th>
+    <th>Hours</th>
+    <th>Notes</th>
+  </tr>
+
+<% for session in @sessions %>
+  <tr>
+    <td><%=h session.user_id %></td>
+    <td><%=h session.project_id %></td>
+    <td><%=h session.created_at %></td>
+    <td><%=h session.rate %></td>
+    <td><%=h session.hours %></td>
+    <td><%=h session.notes %></td>
+    <td><%= link_to 'Show', session %></td>
+    <td><%= link_to 'Edit', edit_session_path(session) %></td>
+    <td><%= link_to 'Destroy', session, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New session', new_session_path %>

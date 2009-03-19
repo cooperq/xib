@@ -1,0 +1,15 @@
+<h1>New session</h1>
+<% form_for(@session) do |f| %>
+  <%= f.error_messages %>
+
+    <%= f.hidden_field :user_id, :value=>1 %>
+    <%= f.label "Project"  %><br />
+    <%= select "session", "project_id", Project.find(:all).collect  { |p| [p.name, p.id] }, {:selected => @project.id.to_i} %>
+  <p>
+    <%= f.label :rate %><br />
+    <%= f.text_field :rate, :value=>@project.default_rate %>
+  </p>
+    <%= f.submit "Create" %>
+<% end %>
+
+<%= link_to 'Back', sessions_path %>

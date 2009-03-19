@@ -1,0 +1,130 @@
+body { background-color: #663300; color: #000; }
+
+body {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  }
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   1em;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #6B9999; padding: 3px; }
+a:visited { color: #6B9999; }
+a:hover { color: #6B9999; background-color:#000; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+div.box {
+  background: white;
+  padding: 10px;
+  margin: 20px;
+  border: 5px solid black;
+  }
+
+.box a{
+  color: #0F3333;
+}
+
+.box a:hover{
+  color: #6B9999;
+}
+  
+#new-project, #new-session {
+  font-size: 2em;
+  margin-top: -1em;
+  float: right;
+}
+
+table {
+   border-collapse: collapse;
+   width: 100%;
+}
+tr.even {
+  border-bottom: 1px solid black;
+  background: #6c6c6c;
+  margin: 0px;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  margin: 2px;
+  border-top: solid 1px black;
+  padding: 3px;
+  height: 20px;
+}
+
+.description {
+  border-bottom: 2px solid black;
+  width: 745px;
+  margin-left: -10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-style: italic;
+}
+
+.sessions-todo #recent-sessions {
+  width: 60%;
+  border-right: 2px solid black;
+}
+
+#notes {
+  width: 40%;
+  float: right;
+  margin-top: -122px;
+  margin-right: -10px;
+}
+
+#hours {
+  width: 20%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 4em;
+  padding: 1em;

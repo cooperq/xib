@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  project_id: 1
+  date: 2009-03-18 17:53:31
+  rate: 1.5
+  hours: 1.5
+  notes: MyText
+
+two:
+  user_id: 1
+  project_id: 1
+  date: 2009-03-18 17:53:31
+  rate: 1.5
+  hours: 1.5
+  notes: MyText

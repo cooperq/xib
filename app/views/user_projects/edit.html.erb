@@ -1,0 +1,20 @@
+<h1>Editing user_projects</h1>
+
+<% form_for(@user_projects) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :project_id %><br />
+    <%= f.text_field :project_id %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @user_projects %> |
+<%= link_to 'Back', user_projects_path %>

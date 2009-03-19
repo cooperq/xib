@@ -1,0 +1,7 @@
+<tr class='<%= cycle('even', 'odd') %> >
+  <td><%= link_to(session.user.name, session.user) %>   </td>
+  <td><%= session.created_at %>                                             </td>
+  <td><%= link_to(session.project.name, session.project) %></td>
+  <td><%= session.hours %>      </td>
+  <td><%= link_to('View', session)   %>                   </td>
+</tr>

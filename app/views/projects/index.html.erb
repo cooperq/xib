@@ -1,0 +1,36 @@
+<h1>Dashboard</h1>
+<div id='new-project'><%= link_to 'New project', new_project_path %></div>
+<div id='project-list' class='box'>
+<h2>Projects</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Rate</th>
+    <th>Notes</th>
+  </tr>
+
+<% for project in @projects %>
+  <tr class="<%= cycle('even', 'odd') %>" >
+    <td><%=h project.name %></td>
+    <td><%=h project.description %></td>
+    <td><%=h number_to_currency(project.default_rate) %></td>
+    <td><%=h project.notes %></td>
+    <td><%= link_to 'Show', project %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+<div id='recent-sessions' class='box'>
+  <h2>Recent Sessions</h2>
+  <table>
+    <th>User</th><th>Date</th><th>Project</th><th>Hours</th><th>View</th>
+    <% sessions = session_list(project) %>
+    <% sessions.each do |session| %>
+      <%= render :partial => session, :locals => {:session => session} %>
+    <% end %>  
+  </table>
+</div>
+<br />
+
+
