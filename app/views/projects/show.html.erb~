@@ -1,5 +1,5 @@
 <h1> <%= @project.name %> </h1> 
-<div id='new-session'><%= link_to 'New Session', new_session_path(:pid=>@session.project_id) %></div>
+<div id='new-session'><%= link_to 'New Session', new_session_path(:pid=>@project.id) %></div>
 <div class='box session-list'>
   <div class='description'>
     <%=h @project.description %>
@@ -9,7 +9,7 @@
       <h2>Recent Sessions</h2>
       <table>
         <th>User</th><th>Date</th><th>Project</th><th>Hours</th><th>View</th>
-        <% sessions = session_list %>
+        <% sessions = session_list(:project) %>
         <% sessions.each do |session| %>
           <%= render :partial => session, :locals => {:session => session} %>
         <% end %>  
