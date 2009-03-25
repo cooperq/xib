@@ -1,5 +1,5 @@
 module SessionsHelper
-  def session_list(project)
-    @sessions = project ? Session.find(:all, :options => {:project_id => project.id}) : Session.find(:all)
+  def session_list(project=false)
+    @sessions = project ? Session.find_by_project_id(project).to_a : Session.find(:all)
   end
 end
