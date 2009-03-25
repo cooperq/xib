@@ -16,7 +16,7 @@
     <td><%=h session.project_id %></td>
     <td><%=h session.created_at %></td>
     <td><%=h session.rate %></td>
-    <td><%=h session.hours %></td>
+    <td><%=h session.minutes %></td>
     <td><%=h session.notes %></td>
     <td><%= link_to 'Show', session %></td>
     <td><%= link_to 'Edit', edit_session_path(session) %></td>
@@ -28,3 +28,4 @@
 <br />
 
 <%= link_to 'New session', new_session_path %>
+

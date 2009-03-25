@@ -4,7 +4,7 @@ class CreateSessions < ActiveRecord::Migration
       t.integer :user_id, :null => false
       t.integer :project_id, :null => false
       t.float :rate
-      t.float :hours, :null => false, :default => 0
+      t.integer :minutes, :null => false, :default => 0
       t.text :notes
 
       t.timestamps
@@ -15,3 +15,4 @@ class CreateSessions < ActiveRecord::Migration
     drop_table :sessions
   end
 end
+

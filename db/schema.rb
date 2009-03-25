@@ -21,10 +21,10 @@ ActiveRecord::Schema.define(:version => 20090319005331) do
   end
 
   create_table "sessions", :force => true do |t|
-    t.integer  "user_id",                     :null => false
-    t.integer  "project_id",                  :null => false
+    t.integer  "user_id",                   :null => false
+    t.integer  "project_id",                :null => false
     t.float    "rate"
-    t.float    "hours",      :default => 0.0, :null => false
+    t.integer  "minutes",    :default => 0, :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
