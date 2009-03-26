@@ -8,7 +8,7 @@
 <h2>Hours:</h2>
 <div class='box' id='hours'>
 
-  <%=h @session.minutes %>
+  <%=h( minutes_to_time(@session.minutes)) %>
 </div>
 <h2>Notes:</h2>
 <div class='box'>
